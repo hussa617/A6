@@ -1,0 +1,100 @@
+lines (199 sloc)  8.4 KB
+// To run code on codio:
+// g++ --std=c++11 FILENAME.cpp -o PROGRAMNAME
+// ./program
+#include <iostream>
+#include <string>
+#include <array>
+#include <vector>
+using namespace std;
+
+//Class just for character parameters
+class character
+{
+    public:
+    int energy=2;
+    int day=1;
+    int position;//positions: learn=0;play=2; sleep=3; goingOut=4;
+    string name = "player"; 
+    int age;
+    
+};
+
+//Class for 'Learn'
+class learn
+{
+    public:
+    void where (int & position/*can be any*/, string & player)
+    {
+        
+        if (position==1) // if psotion = 1 (if player is in the )
+        {
+            cout<< "You are now going to learn"<<endl;
+            cout << "So "<< player<<" if you want to stay home: 0 "<<endl;
+            cout << "If you want to go to play 2"<<endl;
+            cout << "If you want to go to sleep: 3"<<endl;
+            cout << "If you want to go to go out: 4"<<endl;
+            cin >> position ;
+        }
+       
+        
+        
+    }
+};
+
+//Class for play
+class play
+{
+    public:
+    // play
+    string alko;
+    void play (int & position, int & age,int & energy,string & alko )
+    {
+        if (position == 2 && energy >0)
+        {
+        
+ //Class for goingOut
+ class goingOut
+{
+    public:
+    // goingOut
+    string alko;
+    void goingOut (int & position, int & age,int & energy,string & alko )
+    {
+        if (position == 4 && energy >0)
+    {
+    
+ //Class for sleep
+ class sleep
+{
+    public:
+    // sleep
+    string alko;
+    void sleep (int & position, int & age,int & energy,string & alko )
+    {
+        if (position == 3 && energy <2)
+        
+        
+int main ()
+{
+    character player;
+    wayToUni place;
+    bar_shop activity;
+    cin >> player.position;
+    while (player.day < 3)
+    {
+        cout << "Day: "<<player.day<<" Energy: " << player.energy<<"/2"<<endl;
+        if (player.position==1)
+        {
+        place.where(player.position,player.name);
+        activity.bar_place(player.position,player.age,player.energy,activity.alko);
+        activity.shop_place(player.position, activity.all_products, activity.all_price, activity.nrP, activity.nr, activity.products, activity.total, player.energy);
+        }
+        if (player.energy ==0 ) {player.day++; player.energy = 2;}
+        else {player.day++;}
+        
+    }
+    
+    return 0;
+
+}
