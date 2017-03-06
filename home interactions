@@ -1,0 +1,41 @@
+To run code on codio:
+ // g++ --std=c++11 FILENAME.cpp -o PROGRAMNAME
+ // ./program
+ #include <iostream>
+ #include <string>
+ #include <array>
+ #include <vector>
+ using namespace std;
+ 
+ {
+ int Choice;
+ cout<<(" Press 0 to learn");
+ cout<<(" Press 1 to play");
+ cout<<(" Press 2 to Sleep");
+ cout<<(" Press 3 to Go Out");
+ 
+ cout<<(" Make a choice");
+ scanf("%d", &choice);
+ 
+ if (choice == 0)
+ {
+ cout<<(" You are now going to learn");
+ }
+
+ if (choice == 1)
+ {
+ cout<<(" You are now going to play");
+ }
+ 
+  if (choice == 2)
+ {
+ cout<<(" You are now going to sleep");
+ cout<<(" Your energy will now be increased by +2");
+ }
+ 
+ if (choice == 3)
+ {
+ cout<<(" You are now going to go out")
+ }
+ 
+ return(0);
