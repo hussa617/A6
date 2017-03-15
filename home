@@ -1,0 +1,48 @@
+// Home menu c++.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int Choice;
+	printf(" You are now home, press the following numbers to proceed with an action...\n");
+	printf(" Following actions are: 0 - Learn, 1 - Play, 2 - Sleep, 3 - Go out.\n");
+	printf(" Press any key to continue\n");
+	
+
+
+	printf(" Make a choice ");
+	scanf_s("%d", &Choice);
+
+	if (Choice == 0)
+	{
+		printf(" You are now going to learn\n");
+		printf("Your energy has decreased by 1\n");
+	}
+
+	else if (Choice == 1)
+	{
+		printf(" You are now going to play\n");
+		printf("Your energy has decreased by 1\n");
+	}
+
+	else if (Choice == 2)
+	{
+		printf(" You are now going to sleep");
+		printf(" Your energy will now be increased by +2");
+	}
+
+	else if (Choice == 3)
+	{
+		printf(" You are now going to go out\n");
+		printf("your energy has decreased by 3\n");
+	}
+	else
+	{
+		printf("That was not a choice, please try again\n");
+
+		return 0;
+	}
+}
